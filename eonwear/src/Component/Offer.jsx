@@ -2,7 +2,7 @@ import '../Styles/Offer.css'
 
 function Offer() {
   return (
-    <section className="offer">
+    <section id="offers" className="offer">
       <div className="offer-container">
         <h2 className="offer-title">Special Offers</h2>
         <p className="offer-subtitle">Limited time deals on selected timepieces</p>

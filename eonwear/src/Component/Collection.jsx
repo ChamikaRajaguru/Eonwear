@@ -2,7 +2,7 @@ import '../Styles/Collection.css'
 
 function Collection() {
   return (
-    <section className="collection">
+    <section id="collections" className="collection">
       <div className="collection-container">
         <h2 className="collection-title">Our Collections</h2>
         <p className="collection-subtitle">Explore our curated selection of elegant timepieces</p>

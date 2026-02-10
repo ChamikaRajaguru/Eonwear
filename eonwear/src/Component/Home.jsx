@@ -2,7 +2,7 @@ import '../Styles/Home.css'
 
 function Home() {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">Timeless Style for Every Moment</h1>

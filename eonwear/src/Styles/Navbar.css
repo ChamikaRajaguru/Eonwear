@@ -1,0 +1,148 @@
+.navbar {
+  background-color: #222222;
+  border-bottom: 2px solid #d4a574;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  color: #d4a574;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: #d4a574;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #d4a574;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.hamburger.active {
+  background-color: #d4a574;
+}
+
+.navbar-toggle .hamburger:nth-child(1).active {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.navbar-toggle .hamburger:nth-child(2).active {
+  opacity: 0;
+}
+
+.navbar-toggle .hamburger:nth-child(3).active {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #1a1a1a;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar-menu.active {
+    max-height: 300px;
+    border-bottom: 2px solid #d4a574;
+  }
+
+  .navbar-link {
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom: 1px solid #333333;
+  }
+
+  .navbar-link::after {
+    display: none;
+  }
+
+  .navbar-logo a {
+    font-size: 1.2rem;
+  }
+
+  .navbar-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo a {
+    font-size: 1rem;
+  }
+
+  .navbar-container {
+    padding: 0 0.5rem;
+  }
+}

@@ -24,7 +24,7 @@ function Contact() {
   }
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="contact-container">
         <h2 className="contact-title">Get In Touch</h2>
         <p className="contact-subtitle">We'd love to hear from you. Send us a message!</p>
