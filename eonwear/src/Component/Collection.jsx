@@ -10,7 +10,7 @@ function Collection() {
         <div className="collection-grid">
           <div className="collection-card">
             <div className="collection-image">
-              <img src="https://via.placeholder.com/300x300?text=Men+Collection" alt="Men Collection" />
+              <img src="src/assets/men.jpg" alt="Men Collection" />
             </div>
             <h3>Men's Collection</h3>
             <p>Bold and sophisticated watches for the modern man</p>
@@ -19,7 +19,7 @@ function Collection() {
 
           <div className="collection-card">
             <div className="collection-image">
-              <img src="https://via.placeholder.com/300x300?text=Women+Collection" alt="Women Collection" />
+              <img src="src/assets/women.jpg" alt="Women Collection" />
             </div>
             <h3>Women's Collection</h3>
             <p>Elegant and timeless designs for every occasion</p>
@@ -28,7 +28,7 @@ function Collection() {
 
           <div className="collection-card">
             <div className="collection-image">
-              <img src="https://via.placeholder.com/300x300?text=Premium+Collection" alt="Premium Collection" />
+              <img src="src/assets/premium.jpg" alt="Premium Collection" />
             </div>
             <h3>Premium Collection</h3>
             <p>Luxury timepieces for the distinguished collector</p>

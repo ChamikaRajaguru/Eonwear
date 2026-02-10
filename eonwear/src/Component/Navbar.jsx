@@ -23,9 +23,15 @@ function Navbar() {
           <a href="#offers" className="navbar-link">Offers</a>
           <a href="#about" className="navbar-link">About</a>
           <a href="#contact" className="navbar-link">Contact</a>
+          <a href="#cart" className="navbar-link navbar-icon-mobile">Cart</a>
+          <a href="#login" className="navbar-link navbar-icon-mobile">Login</a>
         </div>
 
-        <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+          <div className="navbar-icons">
+            <a href="#cart" className="navbar-icon">🛒</a>
+            <a href="#login" className="navbar-icon">👤</a>
+          </div>
           <div className="navbar-toggle" onClick={toggleMenu}>
             <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
             <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
