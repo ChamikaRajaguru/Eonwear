@@ -15,7 +15,7 @@ function Home() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="https://via.placeholder.com/400x400?text=Watch" alt="EONWEAR Watch" />
+          <img src="src/assets/watch.png" alt="EONWEAR Watch" />
         </div>
       </div>
     </section>

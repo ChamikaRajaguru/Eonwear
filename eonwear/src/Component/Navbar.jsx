@@ -11,8 +11,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo">
-          <a href="#home">EONWEAR</a>
+        <div style={{ flex: 1, display: 'flex' }}>
+          <div className="navbar-logo">
+            <a href="#home">EONWEAR</a>
+          </div>
         </div>
 
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
@@ -23,10 +25,12 @@ function Navbar() {
           <a href="#contact" className="navbar-link">Contact</a>
         </div>
 
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
-          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
-          <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          <div className="navbar-toggle" onClick={toggleMenu}>
+            <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+            <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+            <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}></span>
+          </div>
         </div>
       </div>
     </nav>
